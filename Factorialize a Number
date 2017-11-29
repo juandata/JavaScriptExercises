@@ -1,0 +1,14 @@
+
+
+function factorialize(num) {
+
+  var resultado = 1;
+  var contar;
+  for (contar = num; contar > 1; contar --){
+    resultado *= contar;
+  }
+  return resultado;
+  
+}
+
+factorialize(5);
