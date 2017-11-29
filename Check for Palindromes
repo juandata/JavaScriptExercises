@@ -1,0 +1,6 @@
+function palindrome(str) {
+  // Good luck!
+ return str.replace(/[[\W_]/gi, "").toLowerCase() === str.replace(/[[\W_]/gi, "").toLowerCase().split("").reverse().join("");
+}
+
+palindrome("eye");
