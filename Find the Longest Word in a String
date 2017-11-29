@@ -1,0 +1,9 @@
+
+function findLongestWord(str) {
+ 	var resultado = str.split(" ").reduce(function(a, b){
+    	return Math.max(a, b.length);
+    },0);
+  return resultado;
+}
+
+findLongestWord("The quick brown fox jumped over the lazy dog");
