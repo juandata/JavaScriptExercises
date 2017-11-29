@@ -1,0 +1,11 @@
+function titleCase(str) {
+  var convertir = str.toLowerCase().split(" ");
+  var final = convertir.map(function(a){
+      return a.replace(a.charAt(0), a.charAt(0).toUpperCase());
+  });
+  var conMayuscula = final.join(" ");
+  return conMayuscula;
+}
+
+
+titleCase("I'm a little tea pot")
