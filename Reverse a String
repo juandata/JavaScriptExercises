@@ -1,0 +1,13 @@
+
+function reverseString(str) {
+  
+  var arreglo = str.split(""); //convierto el texto en arreglo
+  var reves = arreglo.reverse();
+  var texto = reves.join("");
+  return texto;
+  
+}
+
+reverseString("hello");
+
+
