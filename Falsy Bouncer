@@ -1,0 +1,40 @@
+/*Remove all falsy values from an array.
+
+Falsy values in JavaScript are false, null, 0, "", undefined, and NaN.
+
+Remember to use Read-Search-Ask if you get stuck. Write your own code.
+
+Here are some helpful links:
+
+Boolean Objects
+Array.prototype.filter()*/
+
+/*SOLUCION CON FILTER*/
+function bouncer(arr) {
+  // Don't show a false ID to this bouncer.
+  return arr.filter(Boolean);
+  
+
+}
+
+bouncer([7, "ate", "", false, 9])
+
+/*SOLUCION SIN FILTER
+
+function bouncer(arr) {
+  // Don't show a false ID to this bouncer.
+  var nuevoArr = [];
+  for ( var i = 0; i < arr.length; i++){
+    var x = new Boolean(arr[i])
+    if (x == true) {
+    nuevoArr.push(arr[i]);
+    }
+}
+
+return nuevoArr;
+}
+
+bouncer([7, "ate", "", false, 9]);
+
+
+*/
