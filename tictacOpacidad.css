@@ -1,0 +1,20 @@
+.container { display: flex; justify-content: center;}
+.toe { width: 100px;
+    height: 100px;
+    font-size: -webkit-xxx-large;
+    border: solid white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+.img { width: 100px; transition: 2s;}
+.noMostrar {opacity: 0;}
+.row { background-color: black; border: white;}
+#opcion, #opcion2 { background-color: black;
+    cursor: pointer;}
+@media (max-width: 360px){
+  .toe { width: 50px; height: 50px;}
+  .img { width: 50px;}
+}
